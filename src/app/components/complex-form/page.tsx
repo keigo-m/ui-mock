@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { ArrowLeft, User, Building, CreditCard, Bell, Save, Shield, Globe, Check, AlertCircle, Eye, EyeOff, FileText, Settings, Plus, Minus, Upload, File, X, Clock } from "lucide-react";
 import DatePicker, { registerLocale } from "react-datepicker";
@@ -100,7 +100,8 @@ const SECTIONS = [
     { id: 'extras', label: 'その他の入力', icon: Settings, color: '#64748B', bgColor: '#F1F5F9', requiredFields: [] },
 ];
 
-export default function ComplexFormPage() {
+// 内部コンポーネント（useSearchParamsを使用）
+function ComplexFormContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const formIdFromUrl = searchParams.get('id');
@@ -231,7 +232,7 @@ export default function ComplexFormPage() {
     }
   };
 
-  const handleInputChange = (field: keyof FormData, value: string | boolean) => {
+  const handleInputChange = (field: keyof FormData, value: string | boolean | number) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
@@ -1086,7 +1087,7 @@ export default function ComplexFormPage() {
                               min={12}
                               max={24}
                               value={formData.fontSize}
-                              onChange={(e) => handleInputChange('fontSize', parseInt(e.target.value) as unknown as boolean)}
+                              onChange={(e) => handleInputChange('fontSize', parseInt(e.target.value))}
                               style={{
                                 width: '100%',
                                 height: '8px',
@@ -1219,7 +1220,7 @@ export default function ComplexFormPage() {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                               <button
                                 type="button"
-                                onClick={() => handleInputChange('quantity', Math.max(1, formData.quantity - 1) as unknown as boolean)}
+                                onClick={() => handleInputChange('quantity', Math.max(1, formData.quantity - 1))}
                                 disabled={formData.quantity <= 1}
                                 style={{
                                   width: '44px',
@@ -1240,7 +1241,7 @@ export default function ComplexFormPage() {
                               <input
                                 type="number"
                                 value={formData.quantity}
-                                onChange={(e) => handleInputChange('quantity', parseInt(e.target.value) || 1 as unknown as boolean)}
+                                onChange={(e) => handleInputChange('quantity', parseInt(e.target.value) || 1)}
                                 min={1}
                                 max={99}
                                 style={{
@@ -1257,7 +1258,7 @@ export default function ComplexFormPage() {
                               
                               <button
                                 type="button"
-                                onClick={() => handleInputChange('quantity', Math.min(99, formData.quantity + 1) as unknown as boolean)}
+                                onClick={() => handleInputChange('quantity', Math.min(99, formData.quantity + 1))}
                                 disabled={formData.quantity >= 99}
                                 style={{
                                   width: '44px',
@@ -1376,5 +1377,25 @@ export default function ComplexFormPage() {
         </div>
       )}
     </div>
+  );
+}
+
+// ページコンポーネント（Suspenseでラップ）
+export default function ComplexFormPage() {
+  return (
+    <Suspense fallback={
+      <div style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #F0F4FF 0%, #E0E7FF 50%, #F5F3FF 100%)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      }}>
+        <div style={{ textAlign: 'center', color: '#6B7280' }}>読み込み中...</div>
+      </div>
+    }>
+      <ComplexFormContent />
+    </Suspense>
   );
 }

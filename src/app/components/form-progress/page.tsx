@@ -7,7 +7,6 @@ import {
   getCoreRowModel,
   flexRender,
   createColumnHelper,
-  ColumnDef,
   VisibilityState,
 } from '@tanstack/react-table';
 import { ArrowLeft, Plus, Edit2, Trash2, Check, Circle, AlertCircle, ChevronDown, ChevronRight, Download, Eye, EyeOff } from 'lucide-react';
@@ -121,7 +120,7 @@ export default function FormProgressPage() {
   };
 
   // カラム定義
-  const columns = useMemo<ColumnDef<TableData, unknown>[]>(() => [
+  const columns = useMemo(() => [
     // 基本情報グループ
     columnHelper.accessor('index', {
       header: '#',

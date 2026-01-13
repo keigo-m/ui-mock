@@ -1,0 +1,42 @@
+﻿
+> ui-mock@0.1.0 build
+> next build
+
+笆ｲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+笨・Compiled successfully in 6.6s
+  Running TypeScript ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/22) ...
+  Generating static pages using 7 workers (5/22) 
+  Generating static pages using 7 workers (10/22) 
+  Generating static pages using 7 workers (16/22) 
+笨・Generating static pages using 7 workers (22/22) in 1555.0ms
+  Finalizing page optimization ...
+
+Route (app)
+笏・笳・/
+笏・笳・/_not-found
+笏・笳・/components/complex-form
+笏・笳・/components/form-progress
+笏・笳・/components/form-samples
+笏・笳・/components/forms
+笏・笳・/components/layouts
+笏・笳・/components/modals
+笏・笳・/components/tabs
+笏・笳・/components/toasts
+笏・笳・/step1
+笏・笳・/step10
+笏・笳・/step2
+笏・笳・/step3
+笏・笳・/step4
+笏・笳・/step5
+笏・笳・/step6
+笏・笳・/step7
+笏・笳・/step8
+笏・笳・/step9
+
+
+笳・ (Static)  prerendered as static content
+

@@ -1,0 +1,140 @@
+﻿src/app/components/form-progress/page.tsx(126,5): error TS2322: Type 'AccessorKeyColumnDef<TableData, number>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorKeyColumnDefBase<TableData, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorKeyColumnDefBase<TableData, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown> & Partial<IdIdentifier<TableData, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<TableData, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, number>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, number>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, number>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, number>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, number> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, number>'.
+                          Type 'unknown' is not assignable to type 'number'.
+src/app/components/form-progress/page.tsx(131,5): error TS2322: Type 'AccessorKeyColumnDef<TableData, string>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown> & Partial<IdIdentifier<TableData, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, string>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, string>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, string>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, string>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, string> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, string>'.
+                          Type 'unknown' is not assignable to type 'string'.
+src/app/components/form-progress/page.tsx(136,5): error TS2322: Type 'AccessorKeyColumnDef<TableData, WorkflowStatus>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorKeyColumnDefBase<TableData, WorkflowStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorKeyColumnDefBase<TableData, WorkflowStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown> & Partial<IdIdentifier<TableData, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<TableData, WorkflowStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, WorkflowStatus>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, WorkflowStatus>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, WorkflowStatus>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, WorkflowStatus>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, WorkflowStatus> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, WorkflowStatus>'.
+                          Type 'unknown' is not assignable to type 'WorkflowStatus'.
+src/app/components/form-progress/page.tsx(167,5): error TS2322: Type 'AccessorKeyColumnDef<TableData, number>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorKeyColumnDefBase<TableData, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorKeyColumnDefBase<TableData, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown> & Partial<IdIdentifier<TableData, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<TableData, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, number>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, number>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, number>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, number>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, number> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, number>'.
+                          Type 'unknown' is not assignable to type 'number'.
+src/app/components/form-progress/page.tsx(184,5): error TS2322: Type 'AccessorFnColumnDef<TableData, boolean>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorFnColumnDefBase<TableData, boolean> & StringHeaderIdentifier' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorFnColumnDefBase<TableData, boolean> & StringHeaderIdentifier' is not assignable to type 'AccessorFnColumnDefBase<TableData, unknown> & IdIdentifier<TableData, unknown>'.
+      Type 'AccessorFnColumnDefBase<TableData, boolean> & StringHeaderIdentifier' is not assignable to type 'AccessorFnColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, boolean>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, boolean>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, boolean>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, boolean>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, boolean> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, boolean>'.
+                          Type 'unknown' is not assignable to type 'boolean'.
+src/app/components/form-progress/page.tsx(201,5): error TS2322: Type 'AccessorKeyColumnDef<TableData, AnalysisStatus>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorKeyColumnDefBase<TableData, AnalysisStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorKeyColumnDefBase<TableData, AnalysisStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown> & Partial<IdIdentifier<TableData, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<TableData, AnalysisStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, AnalysisStatus>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, AnalysisStatus>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, AnalysisStatus>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, AnalysisStatus>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, AnalysisStatus> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, AnalysisStatus>'.
+                          Type 'unknown' is not assignable to type 'AnalysisStatus'.
+src/app/components/form-progress/page.tsx(212,5): error TS2322: Type 'AccessorFnColumnDef<TableData, "none" | "unconfirmed" | "confirmed">' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorFnColumnDefBase<TableData, "none" | "unconfirmed" | "confirmed"> & StringHeaderIdentifier' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorFnColumnDefBase<TableData, "none" | "unconfirmed" | "confirmed"> & StringHeaderIdentifier' is not assignable to type 'AccessorFnColumnDefBase<TableData, unknown> & IdIdentifier<TableData, unknown>'.
+      Type 'AccessorFnColumnDefBase<TableData, "none" | "unconfirmed" | "confirmed"> & StringHeaderIdentifier' is not assignable to type 'AccessorFnColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, "none" | "unconfirmed" | "confirmed">> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, "none" | "unconfirmed" | "confirmed">) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, "none" | "unconfirmed" | "confirmed">) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, "none" | "unconfirmed" | "confirmed">'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, "none" | "unconfirmed" | "confirmed"> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, "none" | "unconfirmed" | "confirmed">'.
+                          Type 'unknown' is not assignable to type '"none" | "unconfirmed" | "confirmed"'.
+src/app/components/form-progress/page.tsx(223,5): error TS2322: Type 'AccessorKeyColumnDef<TableData, DownloadStatus>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorKeyColumnDefBase<TableData, DownloadStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorKeyColumnDefBase<TableData, DownloadStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown> & Partial<IdIdentifier<TableData, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<TableData, DownloadStatus> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, DownloadStatus>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, DownloadStatus>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, DownloadStatus>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, DownloadStatus>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, DownloadStatus> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, DownloadStatus>'.
+                          Type 'unknown' is not assignable to type 'DownloadStatus'.
+src/app/components/form-progress/page.tsx(235,5): error TS2322: Type 'AccessorKeyColumnDef<TableData, string>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown> & Partial<IdIdentifier<TableData, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, string>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, string>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, string>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, string>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, string> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, string>'.
+                          Type 'unknown' is not assignable to type 'string'.
+src/app/components/form-progress/page.tsx(242,5): error TS2322: Type 'DisplayColumnDef<TableData, unknown> | AccessorKeyColumnDef<TableData, string> | AccessorFnColumnDef<TableData, boolean> | AccessorKeyColumnDef<...> | AccessorFnColumnDef<...> | AccessorKeyColumnDef<...>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+  Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<TableData, unknown>'.
+    Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown> & Partial<IdIdentifier<TableData, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<TableData, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<TableData, unknown>'.
+        Types of property 'footer' are incompatible.
+          Type 'ColumnDefTemplate<HeaderContext<TableData, string>> | undefined' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+            Type '(props: HeaderContext<TableData, string>) => any' is not assignable to type 'ColumnDefTemplate<HeaderContext<TableData, unknown>> | undefined'.
+              Type '(props: HeaderContext<TableData, string>) => any' is not assignable to type '(props: HeaderContext<TableData, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'HeaderContext<TableData, unknown>' is not assignable to type 'HeaderContext<TableData, string>'.
+                    The types of 'column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<TableData, unknown> | undefined' is not assignable to type 'AccessorFn<TableData, string> | undefined'.
+                        Type 'AccessorFn<TableData, unknown>' is not assignable to type 'AccessorFn<TableData, string>'.
+                          Type 'unknown' is not assignable to type 'string'.
