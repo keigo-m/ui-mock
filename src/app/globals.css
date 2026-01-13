@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Default Theme (Neutral/Blue-ish) */
+  --primary: #3b82f6; /* blue-500 */
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6; /* gray-100 */
+  --secondary-foreground: #1f2937; /* gray-800 */
+  --accent: #eff6ff; /* blue-50 */
+  --accent-foreground: #1e40af; /* blue-800 */
+  --border: #e5e7eb;
+}
+
+[data-theme='forest'] {
+  --primary: #10b981; /* emerald-500 */
+  --primary-foreground: #ffffff;
+  --secondary: #ecfdf5; /* emerald-50 */
+  --secondary-foreground: #064e3b; /* emerald-900 */
+  --accent: #d1fae5; /* emerald-100 */
+  --accent-foreground: #065f46; /* emerald-800 */
+}
+
+[data-theme='rose'] {
+  --primary: #f43f5e; /* rose-500 */
+  --primary-foreground: #ffffff;
+  --secondary: #fff1f2; /* rose-50 */
+  --secondary-foreground: #881337; /* rose-900 */
+  --accent: #ffe4e6; /* rose-100 */
+  --accent-foreground: #be123c; /* rose-700 */
+}
+
+[data-theme='night'] {
+  --background: #0f172a; /* slate-900 */
+  --foreground: #f8fafc; /* slate-50 */
+  --primary: #818cf8; /* indigo-400 */
+  --primary-foreground: #ffffff;
+  --secondary: #1e293b; /* slate-800 */
+  --secondary-foreground: #e2e8f0; /* slate-200 */
+  --accent: #312e81; /* indigo-900 */
+  --accent-foreground: #e0e7ff; /* indigo-100 */
+  --border: #334155; /* slate-700 */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
