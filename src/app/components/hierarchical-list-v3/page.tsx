@@ -22,6 +22,7 @@ A11/B11/C11
 A11/B11/C22
 A11/B22
 A11/B22/C33
+A11/B22/C33/D11
 A11/B22/C44
 A22
 A22/B11/
@@ -190,10 +191,10 @@ function TreeNodeItem({
         style={{
           display: 'flex',
           alignItems: 'center',
-          padding: '6px 10px',
-          paddingLeft: `${10 + level * 20}px`,
-          borderRadius: '8px',
-          margin: '2px 0',
+          padding: '3px 8px',
+          paddingLeft: `${8 + level * 18}px`,
+          borderRadius: '4px',
+          margin: '1px 0',
           background: getBackgroundStyle(),
           transition: 'all 0.12s ease',
           cursor: 'pointer',
@@ -307,7 +308,7 @@ function TreeNodeItem({
       {hasChildren && isExpanded && (
         <div style={{ 
           borderLeft: '2px solid #E5E7EB', 
-          marginLeft: `${22 + level * 20}px`,
+          marginLeft: `${18 + level * 18}px`,
         }}>
           {node.children.map(child => (
             <TreeNodeItem
