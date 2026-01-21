@@ -263,13 +263,52 @@ function ComplexFormContent() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
+  // セクションにスクロールし、最初の入力欄にフォーカス
+  const scrollToSection = (id: string, focusFirst: boolean = false) => {
       const element = sectionRefs.current[id];
       if (element) {
           window.scrollTo({ top: element.offsetTop - 100, behavior: 'smooth' });
           setActiveSection(id);
+          
+          // フォーカス機能: セクション内の最初の入力可能要素にフォーカス
+          if (focusFirst) {
+            // スクロール完了後にフォーカス（スムーズスクロールのため少し遅延）
+            setTimeout(() => {
+              const focusableSelectors = 'input, textarea, select, button[type="button"]:not([disabled])';
+              const firstFocusable = element.querySelector<HTMLElement>(focusableSelectors);
+              if (firstFocusable) {
+                firstFocusable.focus();
+              }
+            }, 300);
+          }
       }
   };
+
+  // キーボードショートカット: Ctrl+1〜8 でセクションジャンプ
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Ctrl + 数字キー (1-8) でセクションジャンプ
+      if (e.ctrlKey && !e.shiftKey && !e.altKey) {
+        const keyNum = parseInt(e.key);
+        if (keyNum >= 1 && keyNum <= SECTIONS.length) {
+          e.preventDefault(); // ブラウザのデフォルト動作を防止
+          const section = SECTIONS[keyNum - 1];
+          scrollToSection(section.id, true); // フォーカス付きでジャンプ
+          setToast({ message: `${section.label} にジャンプしました (Ctrl+${keyNum})`, type: 'success' });
+        }
+      }
+      
+      // Ctrl + S で保存
+      if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+        handleSaveForm();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
 
   // 共通スタイル
   const cardStyle: React.CSSProperties = {
@@ -701,8 +740,24 @@ function ComplexFormContent() {
                                   alignItems: 'center',
                                   justifyContent: 'center',
                                   background: isActive ? section.bgColor : '#F3F4F6',
+                                  position: 'relative',
                                 }}>
                                   <Icon style={{ width: '18px', height: '18px', color: isActive ? section.color : '#9CA3AF' }} />
+                                  <span style={{
+                                    position: 'absolute',
+                                    top: '-4px',
+                                    right: '-4px',
+                                    width: '16px',
+                                    height: '16px',
+                                    borderRadius: '4px',
+                                    background: '#6B7280',
+                                    color: '#FFFFFF',
+                                    fontSize: '9px',
+                                    fontWeight: 700,
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                  }}>{SECTIONS.indexOf(section) + 1}</span>
                                 </div>
                                 <span>{section.label}</span>
                               </div>
